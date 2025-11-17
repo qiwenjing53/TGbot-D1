@@ -1806,7 +1806,7 @@ async function dbConfigGet(key, env) {
             // 提示：不同配置项的特殊提示
             if (keyOrAction === 'welcome_msg') { prompt = "请发送**新的欢迎消息**："; cancelBack = "config:menu:base"; }
             else if (keyOrAction === 'verif_q') { prompt = "请发送**新的验证问题**："; cancelBack = "config:menu:base"; }
-            else if (keyOrAction === 'verif_a') { prompt = "请发送**新的验证答案**："; cancelBack = "config:menu:base"; }
+            else if (keyOrAction === 'verif_a') { prompt = "请发送你需要设置的答案，如果有多个答案，请用 | 符号分隔（例如：<code>答案一|答案二|答案三</code>）："; cancelBack = "config:menu:base"; }
             else if (keyOrAction === 'block_threshold') { prompt = "请发送**新的屏蔽次数阈值 (数字)**："; cancelBack = "config:menu:keyword"; }
             else if (keyOrAction === 'backup_group_id') { prompt = "请发送**新的备份群组 ID**：\n\n（例如：`-10012345678`）"; cancelBack = "config:menu:backup"; }
             else if (keyOrAction === 'authorized_admins') { prompt = "请发送**新的协管员 ID 列表**，多个 ID 用逗号分隔：\n\n（例如：`1234567, @username_a, 987654`）"; cancelBack = "config:menu:authorized"; }
